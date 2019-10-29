@@ -21,8 +21,8 @@ dotenv.config()
 
 
 if (process.env.NODE_ENV === "production") {
-    var url = "https://elenaperers.me";
-    var urlPort = 'https://elenaperers.me:443';
+    var url = "https://trading.elenaperers.me";
+    var urlPort = 'https://trading.elenaperers.me:443';
 } else {
     var url = "http://localhost";
     var urlPort = "http://localhost:3000";

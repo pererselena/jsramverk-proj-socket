@@ -7,6 +7,10 @@ var stock = {
         let start = input.startingPoint;
         let rate = input.rate;
         let variance = input.variance;
+        let newPrice = start * rate + variance * stock.randomAroundZero()
+        if(newPrice< 0){
+            newPrice -= newPrice + 1
+        }
 
         return start * rate + variance * stock.randomAroundZero();
     }
