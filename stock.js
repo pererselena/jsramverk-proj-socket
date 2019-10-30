@@ -9,10 +9,12 @@ var stock = {
         let variance = input.variance;
         let newPrice = start * rate + variance * stock.randomAroundZero()
         if(newPrice< 0){
-            newPrice -= newPrice + 1
+            newPrice = 0.1;
+        } else if (newPrice > 100) {
+            newPrice = 99;
         }
 
-        return start * rate + variance * stock.randomAroundZero();
+        return newPrice
     }
 };
 
